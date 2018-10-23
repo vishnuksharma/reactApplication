@@ -35,7 +35,7 @@ Without any changes, this app is connected to a Contentful space with read-only 
 ### Step 2
 
 <code>
-    `webpack-dev-server`, `npm run serve`
+    webpack-dev-server, npm run serve
 </code>
 
 ### Step 3
