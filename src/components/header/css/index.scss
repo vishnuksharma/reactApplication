@@ -1,0 +1,67 @@
+.header{
+  background: #131215;
+  color: #fff;
+  padding: 10px 0px;
+  margin: 0px 0px 30px 0px;
+  width: 100%;
+  position: relative;
+
+  .logo{
+    padding: 10px 0px;
+  }
+  ul.navigation{
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    
+    li{
+      display: inline-block;
+      padding: 16px 5px;
+
+      .chevron{
+        font-family: 'Glyphicons Halflings';
+        left: -10px;
+        font-size: 12px;
+        top: -1px;
+
+        &:after{
+          content: "\e259",
+        }
+      }
+      a{
+        padding: 10px 0px 0px 0px;
+        margin: 0px 15px;
+        color: #fff;
+        font-size: 19px;
+        
+        &:hover{
+          border-bottom: 2px solid #fff;
+        }
+      }
+
+      &:hover{
+        .chevron{
+          &:after{
+            content: "\e260";
+          }
+        }
+        
+        ul.subnav{
+          display: inline-block;
+        }
+      }
+    }
+
+    ul.subnav{
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      float: left;
+      display: none;
+      background:#131215;
+      bottom: -44px;
+      z-index: 1;
+    }
+  }
+}
+

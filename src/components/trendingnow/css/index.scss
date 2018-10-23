@@ -1,0 +1,24 @@
+.trending-now-container {
+  padding: 40px 50px;
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  .trending-now-header {
+    margin: 0;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trending-now-container {
+    padding: 20px;
+    .trending-now-header {
+      padding-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../globals/css/breakpoints.scss';
+
+.herobanner{
+  position: relative;
+  color: #fff;
+
+  .descroption{
+    font-size: 30px;
+  }
+
+  h1.large{
+    font-size: 60px;
+  }
+
+  .content{
+    position: relative;
+    top: 40px;
+    left: 80px;
+  }
+
+}
+
+
+//Mobile
+@media (min-width: $screen-sm-min) {
+  .herobanner{
+    .content{
+      position: relative;
+    }
+  }
+
+}
+
+//tablet
+@media (min-width: $screen-md-min) {
+    .herobanner{
+      .content{
+        position: absolute;
+      }
+  }
+}
+
+//desktop
+@media (min-width: $screen-lg-min) {
+  
+  .herobanner{
+    .content{
+      position: absolute;
+    }
+  }
+
+}

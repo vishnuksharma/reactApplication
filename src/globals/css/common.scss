@@ -1,0 +1,42 @@
+#application{
+  width: 100%;
+}
+
+picture{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
+
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 0;
+    position: relative;
+    text-transform: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 19px;
+    border: none;
+
+    &.primary{
+      border: 2px solid #fff;
+      color: #fff;
+      background: none !important;
+    }
+
+    &.secondary{
+      background: #ff4169;
+    }
+}

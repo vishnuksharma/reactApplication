@@ -1,0 +1,155 @@
+@import '../../../globals/css/breakpoints.scss';
+
+.contenttile {
+  .cardlayout {
+    font-family: "Proxima N W01 Smbd","Helvetica Neue",sans-serif;
+    .card-flag {
+      padding: 5px 15px;
+      top: -17px;
+      background-color: #ff4169;
+      color: #fff;
+      position: absolute;
+      margin-top: 0;
+      font-family: "Proxima N W01 Smbd","Helvetica Neue",sans-serif;
+      text-transform: uppercase;
+    }
+    .card-title {
+      color: #fff;
+    }
+  }
+}
+
+//Mobile
+@media (max-width: $screen-xs-max) {
+  .contenttile{
+    .cardlayout{
+      display: block;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 0;
+      .content-left {
+        padding: 0 5px;
+        float: left;
+      }
+      .col-md-pull-1 {
+        margin-left: 0;
+        padding: 0 5px;
+        float: left;
+      }
+      .content-right {
+        transform: translateY(-20%);
+        text-align: center;
+        margin: 0 20px 0 0;
+        background-color: #000;
+        .card-head {
+          padding: 0 13px 25px;
+        }
+      }
+      .card-flag {
+        position: static;
+        transform: translateY(-50%);
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25;
+      }
+      .card-title {
+        .card-content-box {
+          .h1 {
+            margin: 0 0 15px 0;
+            font-size: 26px;
+          }
+          .card-description {
+            font-size: 16px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .hide-sm {
+    display: none;
+  }
+  .hide-xs {
+    display: none;
+  }
+}
+
+//tablet
+//desktop
+@media (min-width: $screen-lg-min), (min-width: $screen-sm-min) {
+  
+  .contenttile {
+    &.spacer-top-bottom {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+    }
+    .cardlayout {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      .content-left {
+        padding: 0 0 0 10px;
+      }
+      .col-md-pull-1 {
+        margin-left:-8.33333333%;
+        right: 0;
+      }
+      .content-right {
+        padding: 23px 20px 35px 46px;
+        margin: 40px 0 0;
+        background-color: #000;
+      }
+      .card-flag {
+        padding: 10px 19px;
+        top: -21px;
+        left: 49px;
+        font-size: 1.22222rem;
+        line-height: 1.27273;
+        font-weight: 700;
+      }
+      .card-title {
+        &::after {
+          content: "";
+          background-image: url(/public/images/contenttile/chevron_right_white.svg);
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          right: 25px;
+          width: 40px;
+          height: 40px;
+        }
+        .card-content-box {
+          text-align: left;
+          padding-left: 0;
+          padding-right: 0;
+          .h1 {
+            margin: 15px 0;
+            padding-right: 80px;
+            font-size: 3.33333rem;
+            line-height: 1;
+          }
+          .card-description {
+            font-size: 1rem;
+            line-height: 1.55556;
+            margin: 0 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: $screen-lg-min) {
+  .hide-sm {
+    display: block;
+  }
+  .hide-xs {
+    display: block;
+  }
+}
