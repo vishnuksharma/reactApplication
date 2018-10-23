@@ -1,4 +1,4 @@
-# Makeup & Beauty
+# React & Application
 
 This is a React application example with the Contentful API's with following features 
 
