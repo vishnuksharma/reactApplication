@@ -6,7 +6,7 @@ app = express();
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('./build/'));
+app.use(express.static('./dist/'));
 
 var port = process.env.PORT || 5000;
 
