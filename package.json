@@ -1,11 +1,12 @@
 {
-  "name": "makeupbeauty",
+  "name": "reactapplication",
   "version": "1.0.0",
-  "description": "Makeup beauty page with React",
+  "description": "Rest service and resnder page with data using React",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "serve": "webpack-dev-server",
+    "start": "node server",
     "webpack-production": "cross-env NODE_ENV=production webpack --env.prod=true",
     "passive-WebpackCompile": "webpack  --display-reasons --config webpack.config.js"
   },
@@ -47,5 +48,9 @@
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.6",
     "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
   }
 }
