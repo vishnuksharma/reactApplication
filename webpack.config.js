@@ -81,7 +81,8 @@ module.exports = {
 		}),
 		
 		new CopyWebpackPlugin ([{
-			from: helpers.root ('public')
+			from: helpers.root ('public'),
+			to: helpers.root ('dist/public')
 		}])
     ]
 };
