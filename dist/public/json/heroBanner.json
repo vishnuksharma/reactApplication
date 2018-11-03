@@ -1,0 +1,18 @@
+{
+  "picturefill":{
+    "mobile" :"/public/images/banner/mobile.jpg",
+    "desktop" :"/public/images/banner/desktop.jpg",
+    "tablet" :"/public/images/banner/tablet.jpg",
+    "alt": "Banner Image"
+  },
+  "title": "NEW! TRUBLEND MATTE MADE",
+  "description" :"Inspired by the Infinite. Made for You",
+  "cta":{
+    "label":"SHOP NOW",
+    "link":"#",
+    "target":"self",
+    "title":"",
+    "type" : "button",
+    "style" : "secondary"
+  }
+}

@@ -7,7 +7,7 @@
     "test": "mocha",
     "serve": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production",
-    "start": "webpack --mode production & node server",
+    "start": "node server",
     "webpack-production": "cross-env NODE_ENV=production webpack --env.prod=true",
     "passive-WebpackCompile": "webpack  --display-reasons --config webpack.config.js"
   },
